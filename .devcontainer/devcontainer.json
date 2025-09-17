@@ -1,0 +1,23 @@
+{
+    "name": "C/CPP-Project",
+    "build": {
+        "dockerfile": "dockerfile",
+        "args": {
+            "UID": "${localEnv:UID:1000}",
+            "GID": "${localEnv:GID:1000}",
+            "NAME": "${localEnv:USER:mabasset}"
+        }
+    },
+    "workspaceFolder": "/home/${localEnv:USER:mabasset}/workspace",
+    "remoteUser": "${localEnv:USER:mabasset}",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/home/${localEnv:USER:mabasset}/workspace,type=bind"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools"
+            ]
+        }
+    }
+}
