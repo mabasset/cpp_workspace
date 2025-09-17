@@ -11,7 +11,8 @@
     "workspaceFolder": "/home/${localEnv:USER:mabasset}/workspace",
     "remoteUser": "${localEnv:USER:mabasset}",
     "mounts": [
-        "source=${localWorkspaceFolder},target=/home/${localEnv:USER:mabasset}/workspace,type=bind"
+        "source=${localWorkspaceFolder},target=/home/${localEnv:USER:mabasset}/workspace,type=bind",
+        "source=${localEnv:HOME}/.ssh,target=/home/${localEnv:USER:mabasset}/.ssh,type=bind,readonly"
     ],
     "customizations": {
         "vscode": {
