@@ -1,5 +1,5 @@
 {
-    "name": "C/CPP-Project",
+    "name": "C-CPP-Project",
     "build": {
         "dockerfile": "dockerfile",
         "args": {
@@ -8,11 +8,10 @@
             "NAME": "${localEnv:USER:mabasset}"
         }
     },
-    "workspaceFolder": "/home/${localEnv:USER:mabasset}/workspace",
+    "workspaceFolder": "${localEnv:HOME}",
     "remoteUser": "${localEnv:USER:mabasset}",
     "mounts": [
-        "source=${localWorkspaceFolder},target=/home/${localEnv:USER:mabasset}/workspace,type=bind",
-        "source=${localEnv:HOME}/.ssh,target=/home/${localEnv:USER:mabasset}/.ssh,type=bind,readonly"
+        "source=${localEnv:HOME},target=${localEnv:HOME},type=bind"
     ],
     "customizations": {
         "vscode": {
