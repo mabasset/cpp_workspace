@@ -8,10 +8,10 @@
             "NAME": "${localEnv:USER:mabasset}"
         }
     },
-    "workspaceFolder": "${localEnv:HOME}",
+    "workspaceFolder": "${localEnv:HOME}/workspace",
     "remoteUser": "${localEnv:USER:mabasset}",
     "mounts": [
-        "source=../,target=${localEnv:HOME}/workspace,type=bind"
+        "source=${localWorkspaceFolder},target=${localEnv:HOME}/workspace,type=bind"
     ],
     "customizations": {
         "vscode": {
