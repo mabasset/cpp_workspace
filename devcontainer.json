@@ -1,23 +1,5 @@
 {
-    "name": "C-CPP-Project",
-    "build": {
-        "dockerfile": "dockerfile",
-        "args": {
-            "UID": "${localEnv:UID:1000}",
-            "GID": "${localEnv:GID:1000}",
-            "NAME": "${localEnv:USER:mabasset}"
-        }
-    },
-    "workspaceFolder": "${localEnv:HOME}/workspace",
-    "remoteUser": "${localEnv:USER:mabasset}",
-    "mounts": [
-        "source=${localWorkspaceFolder},target=${localEnv:HOME}/workspace,type=bind"
-    ],
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode.cpptools"
-            ]
-        }
-    }
+    "name": "cpp_workspace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/cpp:bookworm",
+    "remoteUser": "vscode"
 }
