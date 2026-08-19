@@ -1,0 +1,5 @@
+{
+    "name": "cpp_workspace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/cpp:bullseye",
+    "remoteUser": "vscode"
+}

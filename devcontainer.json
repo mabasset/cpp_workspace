@@ -1,5 +1,0 @@
-{
-    "name": "cpp_workspace",
-    "image": "mcr.microsoft.com/vscode/devcontainers/cpp:bookworm",
-    "remoteUser": "vscode"
-}
