@@ -1,5 +1,13 @@
 {
-    "name": "cpp_workspace",
-    "image": "mcr.microsoft.com/vscode/devcontainers/cpp:bullseye",
-    "remoteUser": "vscode"
+  "name": "cpp_workspace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/cpp:bullseye",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "eamodio.gitlens"
+      ]
+    }
+  }
 }
